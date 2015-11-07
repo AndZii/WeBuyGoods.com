@@ -1,0 +1,278 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url("OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PostTitleFont';
+    src: url("OpenSans-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PostFont';
+    src: url("MadrasExtraLight.otf") format("truetype");
+}
+
+
+
+.container-fluid, a, span , li {
+
+    font-family:'OpenSans', "PT sans" ;
+
+}
+
+header {
+
+    background: #6eceff;
+    color: #373737;
+    padding-bottom: 20px;
+}
+
+
+
+
+.navbar_ul > li {
+
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 140%;
+
+
+}
+
+.brand {
+    
+    width: 30%;
+    text-align: center;
+    font-size: 200% !important;
+    margin-left: 9%;
+    margin-right: 3%;
+}
+
+.menu_item {
+
+    width: 12%;
+    text-align: center;
+    
+}
+
+.introduction {
+
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    margin-top: 50px;
+
+}
+
+
+
+
+
+.date-wraper {
+
+    width: 80px;
+    height: 80px;
+    line-height: 40px;
+    background: #6eceff;
+    margin-right: 1px;
+    margin-left: auto;
+    font-size: 120%;
+    color: white;
+    padding-top: 2px;
+
+}
+
+.date-wraper > .day {
+
+    font-size: 180%;
+
+}
+
+.posts-wrapper {
+    margin-left: 7px;
+}
+
+.type-wrapper {
+
+    width: 80px;
+    color: white;
+    margin-right: 1px;
+    margin-left: auto;
+    text-align: center;
+    background: #5ba6cf;
+}
+
+
+.date {
+
+    font-size: 140%;
+    margin-bottom: 20px;
+
+}
+
+.all-view > div.post {
+    margin-bottom: 20px;
+
+}
+
+.side-bar, .dinamic {
+
+    margin-top: 40px;
+
+}
+
+
+.subscribe {
+
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.form-for-subscribe {
+
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.my_btn {
+
+    margin-top: 10px;
+
+    width: 100% !important;
+
+}
+
+.post-title {
+
+    margin-top: 0;
+    font-size: 180%;
+    font-family: "PostTitleFont";
+
+}
+
+.author-label-wrapper {
+
+
+
+}
+
+.post-intro {
+
+    font-family: 'PostFont';
+    font-size: 140%;
+}
+
+.separator {
+
+    width: 200px;
+    height: 3px;
+    background: #6eceff;
+    margin-bottom: 10px;
+
+}
+
+.post-title > a, .post-title > a:hover {
+
+    color: black;
+    background: white;
+
+
+}
+
+.featured-posts {
+    margin-left: 20px;
+}
+
+div.social-wrapper > a {
+
+    margin-left: 10px;
+
+}
+
+div.social-wrapper > a:hover {
+
+    text-decoration: none;
+    background: white;
+    font-size: 110%;
+    transition: .3s ease-in-out;
+
+}
+
+.featured-label {
+
+    font-size: 120%;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+div.feature-posts-list > a:hover {
+
+    background: white;
+    color:black;
+
+}
+
+.post-image-wraper > img {
+
+    margin: 0px;
+
+}
+
+.image-padding-class {
+
+    padding-left: 0 !important;
+
+}
+
+.news {
+
+    background: rgba(255, 0, 0, 0.77) !important;
+
+}
+
+.comment {
+
+    background: rgba(93, 93, 93, 0.57) !important;
+
+}
+
+.featured-image-wrapper {
+
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.social-wrapper {
+
+
+    text-align: center;
+}
+
+.follow-us {
+
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+
+}
