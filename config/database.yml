@@ -21,10 +21,14 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: mysql
-  pool: 5
-  timeout: 5000
-  encoding: utf8
-  database: sellelec_webuygoods
-  username: sellelec_admin
-  password: webuygoods
+  <<: *default
+  database: db/development.sqlite3
+
+#production:
+#  adapter: mysql
+#  pool: 5
+#  timeout: 5000
+#  encoding: utf8
+#  database: sellelec_webuygoods
+#  username: sellelec_admin
+#  password: webuygoods
