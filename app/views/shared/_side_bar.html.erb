@@ -10,7 +10,7 @@
         <div class="side-bar-label">
           Subscribe:
         </div>
-          <div class="form-for-subscribe">
+          <div class="form-for-subscribe" align="center">
             <%= form_for @email, :url => save_email_path , :html => {class: "form-inline"} do |f| %>
                 <div class="form-group">
                   <%= f.text_field :email, :class => "form-control", :placeholder => "email" %> <br/>

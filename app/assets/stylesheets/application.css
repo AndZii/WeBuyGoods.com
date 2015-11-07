@@ -191,6 +191,11 @@ header {
     width: 100%;
 }
 
+.form-for-subscribe {
+
+
+
+}
 
 
 div.social-wrapper > a {
@@ -203,8 +208,7 @@ div.social-wrapper > a:hover {
 
     text-decoration: none;
     background: white;
-    font-size: 110%;
-    transition: .3s ease-in-out;
+
 
 }
 
@@ -267,3 +271,15 @@ div.feature-posts-list > a:hover {
 
 }
 
+.show-post-wrapper {
+
+    margin-top: 40px;
+
+}
+
+.show-post-title {
+
+    font-size: 220%;
+    text-indent: 30px;
+
+}

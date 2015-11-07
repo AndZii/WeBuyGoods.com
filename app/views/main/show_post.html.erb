@@ -1,21 +1,17 @@
-<h1>SHOW POST</h1>
+<div class="show-post-wrapper">
+<div  class="show-post-title"><%= @post.title %></div>
+<span> <%= @post.created_at %>/ by <%= @post.posted_by %> </span>
+<div class="show-image-wraper">
+  <%= image_tag @post.image, :class => "img-responsive" %>
+</div>
 
 <p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
-
-<p>
-  <strong>Main part:</strong>
   <%= @post.main_part %>
 </p>
 
 <p>
-  <strong>Label:</strong>
-  <%= @post.label %>
-</p>
-
-<p>
-  <strong>Intro:</strong>
   <%= @post.intro %>
 </p>
+</div>
+
+
