@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: 'NavElementsFont';
+    src: url("Track.ttf") format("truetype");
+}
+
+
+
+@font-face {
     font-family: 'PostTitleFont';
     src: url("OpenSans-BoldItalic.ttf") format("truetype");
 }
@@ -31,16 +38,16 @@
 
 
 
-.container-fluid, a, span , li {
+a ,span , li {
 
-    font-family:'OpenSans', "PT sans" ;
+    font-family:'PostTitleFont', "PT sans" ;
 
 }
 
 header {
 
-    background: #6eceff;
-    color: #373737;
+    background: #65b0e0;
+    color: #f6f6f6 !important;
     padding-bottom: 20px;
 }
 
@@ -51,7 +58,7 @@ header {
 
     display: inline-block;
     margin-top: 20px;
-    font-size: 140%;
+    font-size: 100%;
 
 
 }
@@ -82,9 +89,6 @@ header {
 }
 
 
-
-
-
 .date-wraper {
 
     width: 80px;
@@ -105,10 +109,6 @@ header {
 
 }
 
-.posts-wrapper {
-    margin-left: 7px;
-}
-
 .type-wrapper {
 
     width: 80px;
@@ -127,15 +127,6 @@ header {
 
 }
 
-.all-view > div.post {
-    margin-bottom: 20px;
-
-}
-
-
-
-
-
 .my_btn {
 
     margin-top: 10px;
@@ -149,12 +140,6 @@ header {
     margin-top: 0;
     font-size: 180%;
     font-family: "PostTitleFont";
-
-}
-
-.author-label-wrapper {
-
-
 
 }
 
@@ -174,10 +159,8 @@ header {
 }
 
 .post-title > a, .post-title > a:hover {
-
     color: black;
     background: white;
-
 
 }
 
@@ -195,18 +178,20 @@ header {
 
 }
 
+.featured-image-wrapper {
+
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
 .subscribe {
-
     margin-bottom: 30px;
-
+    width: 100%;
 }
 
 
-.featured-posts {
-
-
-
-}
 
 div.social-wrapper > a {
 
@@ -241,7 +226,6 @@ div.social-wrapper > a:hover {
 
     margin-top: 20px;
 
-
 }
 
 div.feature-posts-list > a:hover {
@@ -253,13 +237,7 @@ div.feature-posts-list > a:hover {
 
 .post-image-wraper > img {
 
-    margin: 0px;
-
-}
-
-.image-padding-class {
-
-    padding-left: 0 !important;
+    margin-right: 0px;
 
 }
 
@@ -275,5 +253,17 @@ div.feature-posts-list > a:hover {
 
 }
 
+.devise-wraper {
 
+    color: white;
+    font-size: 200%;
+
+}
+
+.brand-xs {
+    font-size: 200%;
+    text-align: center;
+    padding-top: 10px;
+
+}
 

@@ -1,5 +1,6 @@
+<div class="main-posts-wraper dinamic">
 <% @posts.each do |post| %>
-    <div class="row">
+    <div class="row post-row">
     <div  class="col-sm-2 hidden-xs">
       <div class="date-wraper">
          <div class="day" align="center"> <%= post.created_at.strftime("%d") %> </div>
@@ -9,9 +10,11 @@
         <div class="<%=post.label%>"> <%= post.label.upcase  %> </div>
       </div>
     </div>
+
     <div class="col-sm-10 col-xs-12">
       <div class="posts-wrapper">
         <%= link_to( show_post_path(:title => post.title) ) do %>
+       <div class="row">
         <div class="col-xs-12 image-padding-class">
           <div class="post-image-wraper">
 
@@ -19,6 +22,7 @@
 
           </div>
         </div>
+       </div>
         <% end %>
         <div class="post-title">
           <%= link_to( show_post_path(:title => post.title) ) do %>
@@ -38,4 +42,4 @@
     </div>
     </div>
 <% end %>
-
+</div>

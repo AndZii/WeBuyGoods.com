@@ -1,5 +1,5 @@
 <div class="side-bar-wrapper">
-
+  <div class="row">
     <div class="subscribe">
           <% if @email.errors.full_messages.any? %>
               <% @email.errors.full_messages.each do |error_message| %>
@@ -19,7 +19,9 @@
             <% end %>
           </div>
     </div>
+  </div>
 
+  <div class="row">
     <div class="featured-posts hidden-xs">
       <div class="side-bar-label">
         Featured posts:
@@ -35,7 +37,7 @@
       </div>
       <% end %>
     </div>
-
+  </div>
     <div class="follow-us">
     <div class="side-bar-label">
       Follow us:
