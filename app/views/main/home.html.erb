@@ -1,4 +1,5 @@
 <% @posts.each do |post| %>
+    <div class="row">
     <div  class="col-sm-2 hidden-xs">
       <div class="date-wraper">
          <div class="day" align="center"> <%= post.created_at.strftime("%d") %> </div>
@@ -8,19 +9,22 @@
         <div class="<%=post.label%>"> <%= post.label.upcase  %> </div>
       </div>
     </div>
-
     <div class="col-sm-10 col-xs-12">
       <div class="posts-wrapper">
+        <%= link_to( show_post_path(:title => post.title) ) do %>
         <div class="col-xs-12 image-padding-class">
           <div class="post-image-wraper">
-          <%= image_tag post.image, :class => "img-responsive" %>
+
+                <%= image_tag post.image, :class => "img-responsive" %>
+
           </div>
         </div>
+        <% end %>
         <div class="post-title">
-             <%= link_to( show_post_path(:title => post.title) ) do %>
-                  <%= post.title %>
-             <% end %>
-          </div>
+          <%= link_to( show_post_path(:title => post.title) ) do %>
+            <%= post.title %>
+          <% end %>
+        </div>
         <% if post.posted_by && post.posted_by != "" %>
         <div class="author-label-wrapper">
           Posted by: <span>  <%= post.posted_by %> </span>
@@ -28,9 +32,10 @@
          <% end %>
             <div class="separator">
         </div>
-    <p class="post-intro"> <%= post.intro %>  </p>
+            <p class="post-intro"> <%= post.intro %></p>
       </div>
       <hr/>
+    </div>
     </div>
 <% end %>
 

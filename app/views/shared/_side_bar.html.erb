@@ -1,61 +1,64 @@
+<div class="side-bar-wrapper">
 
-<div class="subscribe">
-      <% if @email.errors.full_messages.any? %>
-          <% @email.errors.full_messages.each do |error_message| %>
-              <br/>  <span style="color:red;"><%= error_message if @email.errors.full_messages.first == error_message %></span>  <br />
+    <div class="subscribe">
+          <% if @email.errors.full_messages.any? %>
+              <% @email.errors.full_messages.each do |error_message| %>
+                  <br/><span style="color:red;"><%= error_message if @email.errors.full_messages.first == error_message %>
+                        </span>  <br/>
+              <% end %>
           <% end %>
-      <% end %>
-    <div class="featured-label">
-      Subscribe:
+        <div class="side-bar-label">
+          Subscribe:
+        </div>
+          <div class="form-for-subscribe">
+            <%= form_for @email, :url => save_email_path , :html => {class: "form-inline"} do |f| %>
+                <div class="form-group">
+                  <%= f.text_field :email, :class => "form-control", :placeholder => "email" %> <br/>
+                  <%= f.submit "SUBSCRIBE", :class => "btn btn-primary my_btn" %>
+                </div>
+            <% end %>
+          </div>
     </div>
-      <div class="form-for-subscribe">
-        <%= form_for @email, :url => save_email_path , :html => {class: "form-inline"} do |f| %>
-            <div class="form-group">
-              <%= f.text_field :email, :class => "form-control", :placeholder => "email" %> <br/>
-              <%= f.submit "SUBSCRIBE", :class => "btn btn-primary my_btn" %>
+
+    <div class="featured-posts hidden-xs">
+      <div class="side-bar-label">
+        Featured posts:
+      </div>
+      <% @featured_posts.each do |featured_post| %>
+      <div class="feature-posts-list">
+        <%= link_to( show_post_path(:title => featured_post.title) ) do %>
+           <div align="center"> <%= featured_post.title %> </div>
+            <div class="featured-image-wrapper">
+              <%= image_tag featured_post.image, :class => "img-responsive" %>
             </div>
         <% end %>
       </div>
-</div>
-<div class="featured-posts hidden-xs">
+      <% end %>
+    </div>
 
-  <div class="featured-label">
-    Featured posts:
-  </div>
-  <% @featured_posts.each do |featured_post| %>
-  <div class="feature-posts-list">
-    <%= link_to( show_post_path(:title => featured_post.title) ) do %>
-       <div align="center"> <%= featured_post.title %> </div>
-        <div class="featured-image-wrapper">
-          <%= image_tag featured_post.image, :class => "img-responsive" %>
-        </div>
+    <div class="follow-us">
+    <div class="side-bar-label">
+      Follow us:
+    </div>
+    <div class="social-wrapper">
+    <%= link_to(root_path) do %>
+      <span class="fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x" style="color: #3b5998;"></i>
+      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+    </span>
     <% end %>
-  </div>
-  <% end %>
-</div>
-
-<div class="follow-us">
-<div class="featured-label">
-  Follow us:
-</div>
-<div class="social-wrapper">
-<%= link_to(root_path) do %>
-  <span class="fa-stack fa-2x">
-  <i class="fa fa-circle fa-stack-2x" style="color: #3b5998;"></i>
-  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-</span>
-<% end %>
-<%= link_to(root_path) do %>
-<span class="fa-stack fa-2x">
-  <i class="fa fa-circle fa-stack-2x" style="color: #517fa4;"></i>
-  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-</span>
-<% end %>
-<%= link_to(root_path) do %>
-  <span class="fa-stack fa-2x">
-  <i class="fa fa-circle fa-stack-2x" style="color: #dd4b39;"></i>
-  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-</span>
-<% end %>
-</div>
+    <%= link_to(root_path) do %>
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x" style="color: #517fa4;"></i>
+      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+    </span>
+    <% end %>
+    <%= link_to(root_path) do %>
+      <span class="fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x" style="color: #dd4b39;"></i>
+      <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+    </span>
+    <% end %>
+    </div>
+    </div>
 </div>

@@ -227,7 +227,7 @@ header {
 
 }
 
-.side-bar, .dinamic {
+.side-bar-wrapper, .dinamic {
 
     margin-top: 40px;
 
@@ -311,7 +311,7 @@ div.social-wrapper > a:hover {
 
 }
 
-.featured-label {
+.side-bar-label {
 
     font-size: 120%;
     font-weight: bold;
