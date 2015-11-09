@@ -292,7 +292,8 @@ div.feature-posts-list > a:hover {
 
 .mobile-header-wripper {
 
-
+    padding-left: 5%;
+    padding-right: 5%;
 
 }
 
@@ -325,7 +326,7 @@ div.feature-posts-list > a:hover {
     height: 45px;
     margin-right: 40% !important;
     margin-left: 40% !important;
-
+    background: #5592b7 !important;
 
 }
 
@@ -341,7 +342,7 @@ div.feature-posts-list > a:hover {
     width: 90% !important;
     margin-left: 5% !important;
     height: 4px !important;
-    margin-bottom: 8px !important;
+    margin-bottom: 7px !important;
 
 }
 
@@ -356,5 +357,11 @@ div.feature-posts-list > a:hover {
 li.active > a {
 
     background: #518cb1 !important;
+
+}
+
+.navbar-collapse {
+
+    border-top: none !important;
 
 }
