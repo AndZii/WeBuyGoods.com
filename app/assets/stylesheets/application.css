@@ -46,6 +46,7 @@ a ,span , li {
 
 header {
 
+    padding-top: 30px;
     background: #65b0e0;
     color: #f6f6f6 !important;
     padding-bottom: 20px;
@@ -285,6 +286,8 @@ div.feature-posts-list > a:hover {
     font-size: 200%;
     text-align: center;
     background: #5592b7;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .mobile-header-wripper {
@@ -295,6 +298,7 @@ div.feature-posts-list > a:hover {
 }
 
 .mobile-logo-wrapper {
+
 
     font-size: 280%;
     text-align: center;
