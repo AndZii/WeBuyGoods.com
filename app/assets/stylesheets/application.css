@@ -292,8 +292,7 @@ div.feature-posts-list > a:hover {
 
 .mobile-header-wripper {
 
-    padding-left: 5%;
-    padding-right: 5%;
+
 
 }
 
@@ -330,13 +329,19 @@ div.feature-posts-list > a:hover {
 
 }
 
+.navbar-toggle:hover {
+
+    background: #5592b7 !important;
+
+}
+
 .icon-bar {
 
     background: #ffffff !important;
     width: 90% !important;
     margin-left: 5% !important;
     height: 4px !important;
-    margin-bottom: 7px !important;
+    margin-bottom: 8px !important;
 
 }
 
