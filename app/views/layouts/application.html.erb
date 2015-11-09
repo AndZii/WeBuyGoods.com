@@ -14,7 +14,13 @@
 <body class="container-fluid">
     <div class="row">
 
-              <%= render "shared/navbar" %>
+            <section class="hidden-xs">
+              <%= render "shared/navbar_bigscreen" %>
+            </section>
+             <section class="visible-xs">
+                <%= render "shared/navbar_xs_screen" %>
+            </section>
+
 
             <div class="col-sm-9">
               <%= yield %>
