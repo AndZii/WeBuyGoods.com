@@ -286,48 +286,51 @@ div.feature-posts-list > a:hover {
 
 
 
-.brand-xs {
-    font-size: 200%;
-    text-align: center;
-    padding-top: 10px;
-
-}
-
-.show-post-wrapper {
-
-    margin: 0 20px;
-
-}
-
-.show-post-title {
-
-    font-size: 220%;
-    text-indent: 30px;
-
-}
 
 header.mobile-header {
 
     height: 100vh;
+    background: url("/xs-font.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 
 }
 
+.mobile-header > div {
 
-.mobile-header-wripper > div {
+    color: white;
+
+}
+
+.mojo-wrapper {
 
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #5592b7;
 
+}
+
+.scroll-down-wrapper {
+
+    text-align: center;
+    padding-top: 20px;
+    font-size: 200%;
+
+
+}
+
+.call-wrapper {
+
+    text-align: center;
+    margin-top: 20px;
+    font-size: 200%;
 
 }
 
 .mobile-logo-wrapper {
 
-    color: black;
     font-size: 280%;
-    background: white;
     margin-bottom: 10px;
     text-align: center;
 
@@ -335,7 +338,6 @@ header.mobile-header {
 
 .mojo-wrapper {
 
-    color: white;
     font-size: 200%;
 
 }
