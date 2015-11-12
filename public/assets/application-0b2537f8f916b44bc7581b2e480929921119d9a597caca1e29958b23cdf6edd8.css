@@ -51,7 +51,7 @@ a:hover {
 }
 
 /* line 35, /Users/andrey/Desktop/railswithnick/AndriiBlog/app/assets/stylesheets/scaffolds.scss */
-div.field, div.actions {
+div.control-group, div.actions {
   margin-bottom: 10px;
 }
 

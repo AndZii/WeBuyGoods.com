@@ -3,13 +3,23 @@ class MainController < ApplicationController
   before_action :set_email
 
   def home
-    @posts = Post.first(10).reverse!
+    @posts = Post.where(:label => "news").first(10).reverse!
   end
 
   def archive
+
   end
 
   def contacts
+
+  end
+
+  def buy
+    @items = Item.all
+  end
+
+  def about_us
+    @posts = Post.where(:label => "review").first(10).reverse!
   end
 
   def show_post

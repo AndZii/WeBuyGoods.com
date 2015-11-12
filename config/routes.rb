@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   resources :posts
   get 'main/home'
 
@@ -7,6 +8,10 @@ Rails.application.routes.draw do
   get 'main/contacts'
 
   get 'read/' => 'main#show_post', as: "show_post"
+
+  get 'buy-items-in-nyc/' => 'main#buy', as: "buy"
+
+  get 'about_webuygoods' => 'main#about_us', as: "about_us"
 
   post 'save_email' => 'main#save_email', as: "save_email"
 

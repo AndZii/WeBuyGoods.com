@@ -1,18 +1,14 @@
 <header>
 <ul class="navbar_ul">
-  <div class="brand-xs"> WeBuyGoods.Com </div>
-  <li class="brand hidden-xs"> <span> WeBuyGoods.Com </span> </li>
-  <li class="menu_item hidden-xs"><span> what we sell </span> </li>
-  <li class="menu_item hidden-xs"> <span> all posts </span> </li>
-  <li class="menu_item hidden-xs"> <span> About us </span> </li>
+  <li class="brand hidden-xs"> <span> <%= link_to "WeBuyGood$.Com", root_path %> </span> </li>
+  <li class="menu_item hidden-xs"><span> <%= link_to "News", root_path %>  </span> </li>
+  <li class="menu_item hidden-xs"><span> <%= link_to "$ell", root_path %>  </span> </li>
+  <li class="menu_item hidden-xs"><span> <%= link_to "Buy", buy_path %>  </span> </li>
+  <li class="menu_item hidden-xs"><span> <%= link_to "About Us", about_us_path %>  </span> </li>
+  <li class="menu_item hidden-xs"><span> <%= link_to "Contacts", root_path %>  </span> </li>
 </ul>
-<div class="introduction">
 
-<div class="devise-wraper">
-    Safe, fast and hassle-free. Quick cash for you items. <br/>
-
-
-</div>
-
+<div class="mojo-wrapper">
+  We provide safe, fast and hassle-free way to get fast cash for your unwanted items. <br/>
 </div>
 </header>

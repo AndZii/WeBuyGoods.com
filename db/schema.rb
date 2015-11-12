@@ -11,12 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106210059) do
+ActiveRecord::Schema.define(version: 20151110212436) do
 
   create_table "emails", force: :cascade do |t|
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "items", force: :cascade do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "price"
+    t.string   "image_1"
+    t.string   "image_2"
+    t.string   "image_3"
+    t.string   "image_4"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 # Could not dump table "posts" because of following NoMethodError

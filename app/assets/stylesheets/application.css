@@ -20,6 +20,12 @@
 }
 
 @font-face {
+    font-family: 'LogoFont';
+    src: url("ContrailOne-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
     font-family: 'NavElementsFont';
     src: url("Track.ttf") format("truetype");
 }
@@ -45,10 +51,9 @@ a ,span , li {
 }
 
 header {
-
     padding-top: 30px;
-    background: #65b0e0;
-    color: #f6f6f6 !important;
+    background: white;
+    color: black !important;
     padding-bottom: 20px;
 }
 
@@ -64,19 +69,35 @@ header {
 
 }
 
+.navbar_ul > li > span > a {
+
+    color: #000000;
+    background: white;
+    text-decoration: none;
+
+}
+
+.navbar_ul > li > span > a:hover {
+
+    color: #6eceff;
+    transition: color .15s ease-in-out;
+}
+
 .brand {
     
-    width: 30%;
-    text-align: center;
-    font-size: 200% !important;
-    margin-left: 9%;
-    margin-right: 3%;
+    width: 20%;
+    text-align: left;
+    font-size: 250% !important;
+    margin-left: 3%;
+    margin-right: 15%;
+
 }
 
 .menu_item {
 
-    width: 12%;
+    width: 10%;
     text-align: center;
+    font-size: 140% !important;
     
 }
 
@@ -102,6 +123,12 @@ header {
     color: white;
     padding-top: 2px;
 
+}
+
+.page-title-wripper {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 10px;
 }
 
 .date-wraper > .day {
@@ -165,17 +192,16 @@ header {
 
 }
 
-.side-bar-wrapper, .dinamic {
+.side-bar-wrapper {
 
-    margin-top: 40px;
 
 }
 
 .side-bar-wrapper {
 
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
+    padding-left:  10%;
+    padding-right:  10%;
 
 }
 
@@ -269,7 +295,7 @@ div.feature-posts-list > a:hover {
 
 .show-post-wrapper {
 
-    margin-top: 40px;
+    margin: 0 20px;
 
 }
 
@@ -280,31 +306,56 @@ div.feature-posts-list > a:hover {
 
 }
 
-.devise-wraper {
+header.mobile-header {
 
-    color: white;
-    font-size: 200%;
-    text-align: center;
-    background: #5592b7;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 100vh;
+
 }
 
-.mobile-header-wripper {
 
-    padding-left: 5%;
-    padding-right: 5%;
+.mobile-header-wripper > div {
+
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #5592b7;
+
 
 }
 
 .mobile-logo-wrapper {
 
-
+    color: black;
     font-size: 280%;
+    background: white;
+    margin-bottom: 10px;
     text-align: center;
 
+}
+
+.mojo-wrapper {
+
+    color: white;
+    font-size: 200%;
 
 }
+
+
+.instargam-invitation-wrapper {
+
+    color: white;
+    font-size: 170%;
+
+}
+
+.mobile-header-wripper {
+
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+
 .control-element-background {
 
     color: #5592b7;
@@ -364,4 +415,41 @@ li.active > a {
 
     border-top: none !important;
 
+}
+
+
+
+footer {
+    margin-top: 40px;
+    background: #274456;
+    height: 400px;
+
+
+}
+
+.buy-images-wripper > div > a > img {
+
+    margin-bottom: 20px;
+
+}
+
+
+.buy-images-wripper > div {
+
+    text-align: center;
+
+}
+
+.buy-images-wripper > div > a > img:hover {
+
+    opacity: .7;
+    transition: opacity .5s;
+
+}
+
+.show-main-part-wrapper {
+
+    max-width: 90%;
+    margin: 20px auto;
+    text-indent: 25px;
 }
